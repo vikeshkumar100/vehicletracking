@@ -1,0 +1,206 @@
+@import url("https://fonts.googleapis.com/css2?family=AR+One+Sans:wght@400;600&family=Lato:wght@400;700&family=Quicksand:wght@300;400;600&display=swap");
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    color: white;
+    scroll-padding-top: 20vh;
+    scroll-behavior: smooth;
+}
+
+:root{
+    --primary:#40c4df;
+    --secondary:#34b1ca;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+    background-color: transparent;
+}
+
+.body-div{
+    background-color: black;
+    font-family: "AR One Sans", sans-serif;
+    width: 100;
+    height: 100vh;
+}
+.header{
+    position:fixed;
+    top: 0;
+    background-color: inherit;
+    height: 20vh;
+    width: 100%;
+    padding: 0vw 8vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo>img{
+    width: 140px;
+    height: 100px;
+}
+.nav{
+    width: 50vw;
+    font-size: 20px;
+    font-weight: bold;
+}
+.nav>ul{
+    display: flex;
+    list-style: none;
+    justify-content: space-evenly;
+}
+.nav a{
+    color: white;
+    text-decoration: none;
+    transition: all ease-in-out 0.3s;
+}
+.nav a:hover{
+    color:red;
+    position: relative;
+    bottom: 3px;
+}
+.button{
+    background-color: var(--primary);
+    width: 160px;
+    height: 45px;
+    font-size: 20px;
+    font-weight:500;
+    border-radius: 10px;
+    color: black;
+    transition: all ease-in-out 0.2s;
+}
+.button1{
+    background-color: transparent;
+    width: 160px;
+    height: 45px;
+    font-size: 20px;
+    font-weight:500;
+    border-radius: 10px;
+    border: 1px solid var(--primary);
+    color: var(--primary);
+    margin-left:10px;
+    transition: all ease-in-out 0.2s;
+}
+.button:hover,.button1:hover{
+    color: red;
+    font-size: 21px;
+}
+.button:active,.button1:active{
+    transform: scale(80%);
+}
+
+/* main */
+
+main{
+    margin-top: 20vh;
+    height: 80vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 80px;
+}
+.main-text{
+    width: 40vw;
+    padding: 20px;
+}
+.main-hero-text{
+    font-size: 32px;
+    font-weight: bolder;
+    padding-bottom: 30px;
+}
+.main-hero-para{
+    font-size: 24px;
+    padding-bottom: 30px;
+    opacity: 80%;
+}
+
+.main-car img{
+    width: 50vw;
+    object-fit: contain;
+}
+.color-font{
+    color:var(--primary);
+    display: inline-block;
+}
+
+/* features */
+.features{
+    border: 1px solid red;
+    background-color: black;
+    width: 100%;
+    height: 100vh;
+}
+
+.map-pic img{
+    width: 20vw;
+    object-fit: contain;
+}
+
+/* footer */
+
+.footer-box {
+    background-color: rgb(0, 0, 0);
+    height: 40vh;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-flow: column nowrap;
+}
+
+.footer-content {
+    font-size: 16px;
+    background-color: transparent;
+    color: white;
+}
+
+.footer-icon {
+    /* border: 2px solid red; */
+    font-size: 50px;
+    color: aliceblue;
+    background-color: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 60vw;
+}
+
+.footer-icon a,
+span {
+    background-color: transparent;
+}
+
+.footer-icon img {
+    background-color: transparent;
+    width: 40px;
+    height: 40px;
+}
+
+.footer-icon img:hover {
+    width: 45px;
+    height: 45px;
+    transform: rotate(360deg);
+    transition: all ease-in-out 0.4s 0.1s;
+}
+
+.footer-icon img:active {
+    width: 35px;
+    height: 35px;
+    transition: all ease-in-out 0.2s;
+    transform: rotate(-360deg);
+}
+
+.footer-logo a {
+    /* border: 2px solid red; */
+    font-size: 32px;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+    text-shadow: 0px 4px 15px aqua;
+}
+
+.footer-logo:hover {
+    transition: all ease-in-out 0.3s;
+    transform: scale(110%);
+}
