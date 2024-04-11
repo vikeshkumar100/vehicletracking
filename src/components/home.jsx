@@ -1,6 +1,7 @@
 import React from 'react'
 import "./comp.css"
 import carphoto1 from "../assets/carphoto1.jpg"
+import { Link } from 'react-router-dom'
 const Home = () => {
   return (
     <>
@@ -15,12 +16,12 @@ const Home = () => {
                         move and set virtual boundaries with our cutting-edge live tracking and geofencing features</p>
                 </div>
                 <div className="main-hero-btn">
-                    <button className="button"><a href="">Track live</a></button>
-                    <button className="button1"><a href="#contact">Get support</a></button>
+                    <button className="button"><Link to="/track">Track live</Link></button>
+                    <button className="button1"><Link to="/contact">Get support</Link></button>
                 </div>
             </div>
             <div className="main-car">
-                <img src={carphoto1} alt="car photo"/>
+                <img src={carphoto1} loading='eager' alt="car photo"/>
             </div>
         </main>
     </>

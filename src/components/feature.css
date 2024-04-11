@@ -1,0 +1,60 @@
+.content {
+    display: flex;
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: center;
+    min-height: 50vh;
+    padding: 30px; 
+    position: relative;
+    top: 15vh;
+  }
+  
+  .content h2 {
+    font-size: 2.6em;
+    margin-bottom: 30px;
+    color: var(--primary); 
+  }
+  
+  .content p {
+    font-size: 1.8em;
+    margin-bottom: 30px; 
+  }
+  
+  .content .smaller-text {
+    font-size: 1.2em; 
+    line-height: 1.5;
+    text-align: justify;
+    max-width: 800px; 
+  }
+  
+  .content button {
+    background-color: var(--primary); 
+    color: white;
+    padding: 15px 30px; 
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 20px; 
+  }
+  
+  .features {
+    display: flex; 
+    flex-wrap: wrap; 
+    justify-content: center; 
+    gap: 20px; 
+  }
+  
+  .features h3 {
+    background-color: #34b1ca; 
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin: 0; 
+    font-size: 1.4em;
+  }
+  
+  
+  :root {
+    --primary: #40c4df; 
+    --secondary: #34b1ca; 
+  }

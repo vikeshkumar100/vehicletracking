@@ -1,0 +1,41 @@
+.container{
+    background-color: black;
+    min-height: 130vh;
+    width: 100%;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    position: relative;
+    top: 15vh;
+    margin-bottom: 15vh;
+    padding: 20px;
+}
+.title{
+    padding: 20px;
+    font-size: 36px;
+    font-weight: 700;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.button{
+    background-color: var(--primary);
+    width: 170px;
+    height: 45px;
+    font-size: 20px;
+    font-weight:500;
+    border-radius: 10px;
+    color: black;
+    transition: all ease-in-out 0.2s;
+}
+.map-container{
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 10vh;
+    background-color: rgba(54, 117, 138, 0.318);
+    border-radius: 20px;
+    border: 1px dashed red;
+    padding: 40px 80px;
+
+}
+.map{
+
+}
