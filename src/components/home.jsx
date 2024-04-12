@@ -16,8 +16,8 @@ const Home = () => {
                         move and set virtual boundaries with our cutting-edge live tracking and geofencing features</p>
                 </div>
                 <div className="main-hero-btn">
-                    <button className="button"><Link to="/track">Track live</Link></button>
-                    <button className="button1"><Link to="/contact">Get support</Link></button>
+                <Link to="/track"><button className="button">Track live</button></Link>
+                <Link to="/contact"><button className="button1">Get support</button></Link>
                 </div>
             </div>
             <div className="main-car">

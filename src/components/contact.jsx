@@ -36,21 +36,21 @@ const Contact = () => {
       </div>
       <div className="right">
         <form className="form" ref={form} onSubmit={sendEmail}>
-        <p className="p">First name*</p>
+        <p className="p">Name*</p>
           <input
             className="input"
             type="text"
-            id="firstName"
+            id="Name"
             name="from_name"
-            placeholder="Your Name"
+            placeholder="Your Name" required
           />
           <p className="p">Email*</p>
-          <input type="email" name="from_email" placeholder="Enter your Email" />
+          <input type="email" name="from_email" placeholder="Enter your Email" required/>
           <p className="p">What can we help you with?</p>
           <textarea
             className="textarea"
             name="message"
-            rows="3"
+            rows="3" required
           ></textarea>
         <input className="button" type="submit" value="Submit" />
         </form>

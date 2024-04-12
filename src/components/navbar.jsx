@@ -1,12 +1,12 @@
 import React from 'react'
 import "./comp.css"
 import carlogo from "../assets/carlogo.png"
-import { Link, NavLink } from 'react-router-dom'
+import { NavLink } from 'react-router-dom'
 const Navbar = () => {
   return (
     <div>
         <header className="header">
-            <div className="logo"><img src={carlogo} alt="carlogo" /></div>
+            <div className="logo"><NavLink to="/"><img src={carlogo} alt="carlogo" /></NavLink></div>
             <div className="nav">
                 <ul>
                     <li><NavLink to="/">Home</NavLink></li>
@@ -15,7 +15,7 @@ const Navbar = () => {
                 </ul>
             </div>
             <div>
-                <button className="button"><Link to="/track">Start Tracking</Link></button>
+            <NavLink to="/track"><button className="button">Start Tracking</button></NavLink>
             </div>
         </header>
     </div>

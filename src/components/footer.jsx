@@ -1,5 +1,6 @@
 import React from 'react'
 import "./comp.css"
+import {Link} from "react-router-dom"
 import insta from "../assets/instagram.png"
 import linkedin from "../assets/linkedin.png"
 import social from "../assets/social.png"
@@ -26,7 +27,7 @@ const Footer = () => {
                         alt="facebook logo" /></a>
             </div>
             <div className="footer-logo">
-                <span><a href="#home">Vehicle Track</a></span>
+                <span><Link href="/">Vehicle Track</Link></span>
             </div>
         </footer>
     </>
