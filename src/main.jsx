@@ -5,6 +5,7 @@ import Home from "./components/home.jsx"
 import Feature from "./components/feature"
 import Track from "./components/track"
 import Contact from "./components/contact"
+import Alerts from "./components/alerts"
 import { RouterProvider, createBrowserRouter } from 'react-router-dom'
 const router=createBrowserRouter([
   {
@@ -26,7 +27,11 @@ const router=createBrowserRouter([
       {
         path:"contact",
         element:<Contact />
-      }
+      },
+      {
+        path:"alerts",
+        element:<Alerts />
+      },
     ]
   }
 ])

@@ -31,19 +31,19 @@ const Feature = () => {
           </li>
           <li>
             <div>
-              <time>Theft Alert</time> Receive instant alerts in case of suspected theft or unauthorized use of vehicles, enabling quick response and recovery actions.pibus arcu, sit amet sollicitudin eros.
+              <time>Theft Alert</time> Receive instant alerts in case of suspected theft or unauthorized use of vehicles, enabling quick response and recovery actions.
             </div>
             <center><i className='bx bxs-alarm-exclamation'></i></center>
           </li>
           <li>
             <div>
-              <time>Customizable Notifications</time> Customize alert settings and receive it via SMS or call. It is available in the website too
+              <time>Message and call alerts</time> Receive alerts via SMS or call. It is available in the website too
             </div>
             <center><i className='bx bxs-bell-plus'></i></center>
           </li>
           <li>
             <div>
-              <time>Historical Route Analysis</time> View historical route data to analyze past movements, identify patterns, and optimize future routes for improved efficiency.
+              <time>Last location</time>If the device is not working or it is not connected to internet ,even then we can see the last location of the device
             </div>
             <center><i className='bx bxs-direction-right'></i></center>
           </li>
