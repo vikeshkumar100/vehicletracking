@@ -37,7 +37,7 @@ const Feature = () => {
           </li>
           <li>
             <div>
-              <time>Message and call alerts</time> Receive alerts via SMS or call. It is available in the website too
+              <time>24 X 7 active</time> Receive alerts and live location 24 X 7 ,which means any day any time tracking. 
             </div>
             <center><i className='bx bxs-bell-plus'></i></center>
           </li>
