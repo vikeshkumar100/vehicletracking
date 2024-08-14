@@ -32,6 +32,11 @@ const router=createBrowserRouter([
         path:"alerts",
         element:<Alerts />
       },
+      {
+        path: "*",
+        element: <Home /> 
+      }
+      
     ]
   }
 ])
