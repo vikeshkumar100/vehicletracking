@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { GoogleMap, useJsApiLoader, Marker } from "@react-google-maps/api";
 
 const containerStyle = {
@@ -12,13 +12,39 @@ function Map() {
     googleMapsApiKey: "AIzaSyBqI77dxeX1Nwmcs2Qfm2qOiYRntY4YFp0",
   });
 
-  const [center, setCenter] = useState({ lat: 12.9719, lng: 79.1637 });
+  const [center, setCenter] = useState(null);
 
-  const onLoad = React.useCallback(function callback(map) {
-    // You can add additional logic here if needed
+  useEffect(() => {
+    if (navigator.geolocation) {
+      navigator.geolocation.getCurrentPosition(
+        (position) => {
+          const { latitude, longitude, accuracy } = position.coords;
+          console.log(`Latitude: ${latitude}, Longitude: ${longitude}, Accuracy: ${accuracy} meters`);
+          setCenter({ lat: latitude, lng: longitude });
+        },
+        (error) => {
+          console.error("Error getting location:", error);
+          // Set a default location if user denies or if there's an error
+          setCenter({ lat: 12.9719, lng: 79.1637 });
+        },
+        {
+          enableHighAccuracy: true, // Request high accuracy location
+          timeout: 5000, // Set a timeout to handle cases where location fetching takes too long
+          maximumAge: 0, // No caching, always get fresh location data
+        }
+      );
+    } else {
+      console.error("Geolocation is not supported by this browser.");
+      // Set a default location if geolocation is not supported
+      setCenter({ lat: 12.9719, lng: 79.1637 });
+    }
   }, []);
 
-  return isLoaded ? (
+  const onLoad = React.useCallback(function callback(map) {
+    // Additional logic can be added here if needed
+  }, []);
+
+  return isLoaded && center ? (
     <GoogleMap
       mapContainerStyle={containerStyle}
       center={center}
