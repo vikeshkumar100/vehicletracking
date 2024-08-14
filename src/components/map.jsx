@@ -1,7 +1,5 @@
-// map.jsx
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import { GoogleMap, useJsApiLoader, Marker } from "@react-google-maps/api";
-import { database, ref, onValue } from "../firebaseConfig";
 
 const containerStyle = {
   width: "70vw",
@@ -14,23 +12,10 @@ function Map() {
     googleMapsApiKey: "AIzaSyBqI77dxeX1Nwmcs2Qfm2qOiYRntY4YFp0",
   });
 
-  const [map, setMap] = useState(null);
-  const [center, setCenter] = useState(null);
-
-  useEffect(() => {
-    const dataRef = ref(database); 
-
-    onValue(dataRef, (snapshot) => {
-      const data = snapshot.val();
-      setCenter({ lat: data.lat, lng: data.lng });
-    });
-
-    return () => {
-    };
-  }, []);
+  const [center, setCenter] = useState({ lat: 12.9719, lng: 79.1637 });
 
   const onLoad = React.useCallback(function callback(map) {
-    setMap(map);
+    // You can add additional logic here if needed
   }, []);
 
   return isLoaded ? (
@@ -40,7 +25,7 @@ function Map() {
       zoom={19}
       onLoad={onLoad}
     >
-      {center && <Marker position={center} />}
+      <Marker position={center} />
     </GoogleMap>
   ) : (
     <></>
