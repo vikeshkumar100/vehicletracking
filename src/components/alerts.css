@@ -38,6 +38,9 @@
     background-color: rgba(245, 24, 24, 0.489);
 }
 @media only screen and (max-width: 800px) {
+    .table-container{
+        margin-top: 10vh;
+    }
     .table{
         padding: 0;
     }

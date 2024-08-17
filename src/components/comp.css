@@ -22,7 +22,7 @@ a{
     position:fixed;
     top: 0;
     background-color: black;
-    height: 15vh;
+    height: 10vh;
     width: 100%;
     padding: 3vh 8vw 0vh 8vw;
     display: flex;
@@ -193,10 +193,11 @@ span {
         padding: 10px;
         justify-content: start;
         gap: 10px;
+        height: 10vh;
     }
     .nav{
-        width: 100vw;
-        font-size: 18px;
+        width: 100%;
+        font-size: 14px;
         font-weight: bold;
     }
     .start-track{
@@ -214,7 +215,7 @@ span {
         flex-flow: row wrap-reverse;
     }
     .main-text{
-        width: 100vw;
+        width: 100%;
         padding:0 10px 20px 10px;
     }
     
@@ -232,6 +233,12 @@ span {
         display: flex;
         justify-content: space-evenly;
         padding-top: 20px;
+    }
+    .button{
+        width: 40vw;
+    }
+    .button1{
+        width: 40vw;
     }
     .footer-icon {
         width: 90vw !important;

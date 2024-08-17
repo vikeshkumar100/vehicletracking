@@ -62,7 +62,8 @@ input[type="text"], input[type="email"], textarea {
 }
 @media only screen and (max-width: 800px) {
     .div{
-        top:3vh;
+        top:0;
+        padding-top: 13vh;
     }
     .left{
         width: 90vw;

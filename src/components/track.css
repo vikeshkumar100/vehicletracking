@@ -1,7 +1,7 @@
 .container{
     background-color: black;
     min-height: 130vh;
-    min-width: 100%;
+    width: 100%;
     display: flex;
     flex-flow: column nowrap;
     align-items: center;
@@ -37,5 +37,9 @@
 
 }
 @media only screen and (max-width: 800px) {
+    .map-container{
+        gap: 10vh;
+        padding: 30px;
     
+    }
 }

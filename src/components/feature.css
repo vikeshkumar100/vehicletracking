@@ -160,13 +160,16 @@ time {
 }
 
 @media only screen and (max-width: 800px) {
+  .outer-box{
+    top: 10vh;
+  }
 
   .left-side{
     width: 95%;
     height: auto;
   }
   .intro h1{
-    font-size: 48px;
+    font-size: 42px;
   }
   .f-img img{
     padding: 20px;
@@ -174,7 +177,8 @@ time {
     height: 95%;
   }
   .timeline ul li {
-    width: 100%;
+    font-size: 20px;
+    width: 90%;
     padding-top: 20px;
     background-color: #000;
   }
