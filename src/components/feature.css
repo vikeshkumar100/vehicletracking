@@ -169,7 +169,7 @@ time {
     height: auto;
   }
   .intro h1{
-    font-size: 42px;
+    font-size: 38px;
   }
   .f-img img{
     padding: 20px;
@@ -177,7 +177,7 @@ time {
     height: 95%;
   }
   .timeline ul li {
-    font-size: 20px;
+    font-size: 18px;
     width: 90%;
     padding-top: 20px;
     background-color: #000;

@@ -47,4 +47,13 @@
     .table-container{
         padding:30px 0;
     }
+    .table-container h1{
+        font-size: 38px;
+    }
+    .table{
+        padding: 20px;
+        font-size: 22px;
+        text-align:start;
+        width: 90%;
+    }
 }

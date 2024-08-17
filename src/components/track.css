@@ -37,9 +37,16 @@
 
 }
 @media only screen and (max-width: 800px) {
+    .container{
+        top: 10vh;
+        margin-bottom: 10vh;
+    }
     .map-container{
         gap: 10vh;
         padding: 30px;
     
+    }
+    .title{
+        font-size: 30px;
     }
 }
