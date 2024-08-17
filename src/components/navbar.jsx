@@ -15,7 +15,7 @@ const Navbar = () => {
                     <li><NavLink to="/alerts">Alerts</NavLink></li>
                 </ul>
             </div>
-            <div>
+            <div className="start-track">
             <NavLink to="/track"><button className="button">Start Tracking</button></NavLink>
             </div>
         </header>

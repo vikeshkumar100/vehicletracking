@@ -1,6 +1,6 @@
 import React from 'react'
 import "./comp.css"
-import carphoto1 from "../assets/carphoto1.jpg"
+import carphoto1 from "../assets/carphoto11.jpg"
 import { Link } from 'react-router-dom'
 const Home = () => {
   return (

@@ -1,18 +1,19 @@
 .div{
-    position: relative;
-    top: 15vh;
+    position:relative;
+    top: 10vh;
     background-color: rgb(0, 0, 0);
     min-height: 100vh;
     width: 100%;
     display: flex;
+    flex-flow: row wrap;
     justify-content:space-evenly;
     padding-top: 18vh;
 }
 .left{
     display: flex;
-    flex-flow: column nowrap;
+    flex-flow: column wrap;
     gap: 25px;
-    max-width: 28vw;
+    width: 28vw;
 }
 .left>h1{
     font-size: 60px;
@@ -26,12 +27,13 @@
 }
 .right{
     width: 30vw;
-    max-height: 60vh;
+    height: fit-content;
     background-color: rgba(0, 255, 255, 0.349);
     backdrop-filter: blur(10px);
     padding: 20px;
     border-radius: 15px;
     box-shadow: 10px 10px 30px #40c5dfe1;
+    margin:0 0 10% 0;
 }
 .form{
     display: flex;
@@ -57,4 +59,22 @@ input[type="text"], input[type="email"], textarea {
 .p{
     font-size: 16px;
     font-weight: bold;;
+}
+@media only screen and (max-width: 800px) {
+    .div{
+        top:3vh;
+    }
+    .left{
+        width: 90vw;
+    }
+    .left>h1{
+        font-size: 40px;
+    }
+    .left>div{
+        font-size: 20px;
+    }
+    .right{
+        width: 90vw;
+        margin: 20% 0;
+    }
 }
